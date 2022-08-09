@@ -1,0 +1,139 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+}
+
+
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    margin: auto;
+    height: 700px;
+    background-image: url("./img-mission-background.jpg");
+}
+
+.mission-box{
+    display: flex;  
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+.month {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    align-items: center;
+}
+.month-text-box {
+    text-align: center;
+}
+
+
+
+.tea-list {
+    display: flex;
+    max-width: 1000px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.tea-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.tea-item img {
+    width: 300px;
+    height: 200px;
+}
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    background-image: url(./img-locations-background.jpg);
+}
+
+.location-list {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 300px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+.copyright {
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
