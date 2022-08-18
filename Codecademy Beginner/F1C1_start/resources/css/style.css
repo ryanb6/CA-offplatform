@@ -6,6 +6,8 @@ html {
   font-size: 16px;
 }
 
+
+
 .main-content {
   top: 5.3125rem; /* To offset for fixed header. */
 }
@@ -26,6 +28,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -123,14 +126,15 @@ header .mobile {
   display: flex;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   height: 43.5rem;
 }
 
 #sign-up-cta {
+  position: relative;
   margin-left: 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
@@ -205,7 +209,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .desktop{
     display: none;
 
@@ -357,11 +361,11 @@ header .mobile {
 
 #quotes-section {
  
-  margin: 5rem 0;
 }
 
 #quotes-section .content-center {
   display: flex;
+  justify-content: center;
   
 }
 
@@ -392,6 +396,19 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .content-center {
+    flex-direction: column;
+    padding: 1.875rem .625rem;
+  }
+
+  .quote-citation{
+    margin: auto;
+    padding-top: 1rem;
+    display: block;
   }
 }
 
