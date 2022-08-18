@@ -1,0 +1,167 @@
+/* UNIVERSAL STYLE */
+
+html {
+    font-size: 16px;
+}
+
+img {
+    overflow: hidden;
+}
+
+/* HEADER STYLE */
+
+header{
+    
+}
+
+.container{
+    display: flex;
+}
+
+header .container{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: seagreen;
+}
+
+
+
+.logo-title{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: space-between;
+    
+}
+
+.logo-text{
+    flex-shrink: 2;
+}
+
+.icon{
+    min-width: 2rem;
+    padding-right: 1rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+/* MAIN CONTENT STYLE */
+
+
+/* HERO STYLE */
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background-image: url("../images/james-stamler-splash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    
+}
+
+.hero-text-container{
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    background-color: gray;
+    opacity: .75;
+    
+}
+.hero-text{
+    color: white;
+}
+
+/* FEATURES STYLE */
+
+#features{
+    padding-top: 2rem;
+    display: block;
+    min-height: 500px;
+    margin: auto;
+}
+
+.features-container {
+    margin: 0 auto;
+}
+.features-text{
+    text-align: center;
+}
+.feature-text {
+    text-align: center;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+.img-container{
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/* STAFF STYLE */
+
+#staff{
+    display: block;
+}
+
+.staff-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: grey;
+}
+
+.staff-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.staff-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.staff-image {
+    width: 65%;
+    height: 65%;
+}
+
+footer {
+    text-align: center;
+}
+
+
