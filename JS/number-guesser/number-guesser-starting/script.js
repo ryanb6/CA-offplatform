@@ -38,7 +38,7 @@ const advanceRound = () => currentRoundNumber += 1;
 
 
 // Debugging
-/*
+/* 
 let hGuess = generateTarget();
 let cGuess = generateTarget();
 let target = generateTarget();
