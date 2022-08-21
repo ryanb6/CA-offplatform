@@ -93,11 +93,10 @@ const sumArr = (arr) => {
     }
     return ret
 }
-
+/*
 // takes an array and a string
 // return true if that string is already found in the array
 // should just use .includes() instead
-/*
 const noRepeat = (arr, value) => {
     return arr.some((arrValue) => value === arrValue)
 }
@@ -105,14 +104,6 @@ const noRepeat = (arr, value) => {
 
 let test = findInvalidCards(batch);
 console.log(idInvalidCardCompanies(test))
-
-
-/*
-&& noRepeat(ret, 'Amex (American Express)'
-&& noRepeat(ret, 'Visa')
-&& noRepeat(ret, 'Mastercard')
-&& noRepeat(ret, 'Discover')
-*/
 
 
 
