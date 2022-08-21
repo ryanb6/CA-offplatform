@@ -25,10 +25,94 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
+// Check if a credit card number is valid
+// Returns true when valid and false when invalid
+const validateCred = (arr) => {
+    let luhnArr = []
+    let double = false
+    let toAdd = 0
+    // double every second digit, if digit is above 10, subtracts nine
+    // adds new digit to beginning of array
+    for(let i = arr.length - 1; i >= 0; i--){
+        toAdd = arr[i]
+        if(double){
+            toAdd = toAdd * 2
+            if(toAdd > 10){
+                toAdd = toAdd - 9
+            }
+            luhnArr.unshift(toAdd)
+            double = false
+        }else{
+            luhnArr.unshift(toAdd)
+            double = true
+        }
+    }
+    let sum = sumArr(luhnArr);
+    if(sum % 10 === 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+// takes an array of credit card arrays and checks which are invalid
+// returns an array in valid cards
+const findInvalidCards = (batch) => {
+    let ret = []
+    for(card of batch){
+        if(validateCred(card) === false){
+            ret.push(card)
+        }
+    }
+    return ret
+}
+
+// takes an array of invalid card numbers
+// returns an array of corresponding companies
+const idInvalidCardCompanies = (batch) => {
+    let ret = []
+    for(card of batch){
+        if(card[0] === 3 && !ret.includes('Amex (American Express)')){
+            ret.push('Amex (American Express)')
+        }else if(card[0] === 4 && !ret.includes('Visa')){
+            ret.push('Visa')
+        }else if(card[0] === 5 && !ret.includes('Mastercard')){
+            ret.push('Mastercard')
+        }else if(card[0] === 6 && !ret.includes('Discover')){
+            ret.push('Discover')
+        }
+    }
+    return ret;
+}
+
+// Adds all digits in array
+const sumArr = (arr) => {
+    let ret = 0
+    for(let i = 0; i < arr.length; i++){
+        ret = ret + arr[i]
+    }
+    return ret
+}
+
+// takes an array and a string
+// return true if that string is already found in the array
+// should just use .includes() instead
+/*
+const noRepeat = (arr, value) => {
+    return arr.some((arrValue) => value === arrValue)
+}
+*/
+
+let test = findInvalidCards(batch);
+console.log(idInvalidCardCompanies(test))
 
 
-
-
+/*
+&& noRepeat(ret, 'Amex (American Express)'
+&& noRepeat(ret, 'Visa')
+&& noRepeat(ret, 'Mastercard')
+&& noRepeat(ret, 'Discover')
+*/
 
 
 
