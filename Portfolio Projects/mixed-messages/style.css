@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.quote-container {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.quote {
+
+}
+
+.button-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
